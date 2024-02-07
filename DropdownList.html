@@ -1,0 +1,619 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      .cols-sample-area
+      {
+        width: 600px;
+      }
+    </style>
+    <title>
+      Essential Studio for JavaScript : Diagram - Swimlane Diagran
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <link href="https://cdn.syncfusion.com/18.3.0.47/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <!--External script references-->
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
+
+    <!--Internal script references-->
+
+    <script src="http://cdn.syncfusion.com/20.4.0.44/js/web/ej.web.all.min.js"></script>
+   <style>
+    .dishRating {
+        position: absolute;
+        margin: -31px 0px 0px 80px;
+    }
+  </style>
+</head>
+
+<body>
+ <div id="accordion" style="width: 500px">
+    <h3>
+        <a href="#">Content</a>
+    </h3>
+    <div id="dish1" style="width: 650px">
+      <ul>
+          <li><a href="#ddl1">Dropdown List 1</a></li>
+          <li><a href="#ddl2">Dropdown List 2</a></li>
+      </ul>
+      <div id="ddl1" style="background-color: #F5F5F5">
+        <input type="text" id="dropdown1" />
+          <br/>
+          <br/>
+          <div  style="background-color: #F5F5F5">
+            <input type="text" id="dropdown25" />
+          </div>
+          <br/>
+          <br/>
+          <div  style="background-color: #F5F5F5">
+            <input type="text" id="dropdown26" />
+          </div>
+          <br/>
+          <br/>
+          <div style="background-color: #F5F5F5">
+            <input type="text" id="dropdown27" />
+          </div>
+      </div>
+      <div id="ddl2" style="background-color: #F5F5F5">
+        <input type="text" id="dropdown2" />
+        <br/>
+          <br/>
+          <div  style="background-color: #F5F5F5">
+            <input type="text" id="dropdown35" />
+          </div>
+          <br/>
+          <br/>
+          <div  style="background-color: #F5F5F5">
+            <input type="text" id="dropdown36" />
+          </div>
+          <br/>
+          <br/>
+          <div style="background-color: #F5F5F5">
+            <input type="text" id="dropdown37" />
+          </div>
+      </div>
+    </div>
+    <h3>
+      <a href="#">Content2</a>
+    </h3>
+    <div id="dish2" style="width: 650px">
+      <ul>
+          <li><a href="#ddl3">Dropdown List 3</a></li>
+          <li><a href="#ddl4">Dropdown List 4</a></li>
+      </ul>
+      <div id="ddl3" style="background-color: #F5F5F5">
+        <input type="text" id="dropdown3" />
+          <br/>
+          <br/>
+          <div  style="background-color: #F5F5F5">
+            <input type="text" id="dropdown5" />
+          </div>
+          <br/>
+          <br/>
+          <div  style="background-color: #F5F5F5">
+            <input type="text" id="dropdown6" />
+          </div>
+          <br/>
+          <br/>
+          <div style="background-color: #F5F5F5">
+            <input type="text" id="dropdown7" />
+          </div>
+      </div>
+      <div id="ddl4" style="background-color: #F5F5F5">
+        <input type="text" id="dropdown4" />
+        <br/>
+          <br/>
+          <div  style="background-color: #F5F5F5">
+            <input type="text" id="dropdown15" />
+          </div>
+          <br/>
+          <br/>
+          <div  style="background-color: #F5F5F5">
+            <input type="text" id="dropdown16" />
+          </div>
+          <br/>
+          <br/>
+          <div style="background-color: #F5F5F5">
+            <input type="text" id="dropdown17" />
+          </div>
+      </div>
+      
+    </div>
+</div>
+  <script>
+    $("#accordion").ejAccordion();
+    $("#dish1").ejTab();
+    $("#dish2").ejTab();
+    $('#dropdown1').ejDropDownList();
+    var dataSource1=[
+            {
+                dictionaryDatiAggiuntivi: {
+                },
+                ordinePerAnnullati: "",
+                stringa_Servizio: "",
+                text: "Amministratore del sistema",
+                valore_descrizione: "ADM - Amministratore del sistema",
+                value: "ADM",
+                valueOriginale: "ADM"
+            },
+            {
+                dictionaryDatiAggiuntivi: {
+                },
+                ordinePerAnnullati: "",
+                stringa_Servizio: "",
+                text: "Direzione",
+                valore_descrizione: "DIR - Direzione",
+                value: "DIR",
+                valueOriginale: "DIR"
+            },
+            {
+                dictionaryDatiAggiuntivi: {
+                },
+                ordinePerAnnullati: "",
+                stringa_Servizio: "",
+                text: "Pianificatore",
+                valore_descrizione: "PIA - Pianificatore",
+                value: "PIA",
+                valueOriginale: "PIA"
+            },
+            {
+                dictionaryDatiAggiuntivi: {
+                },
+                ordinePerAnnullati: "",
+                stringa_Servizio: "",
+                text: "Segreteria direzione",
+                valore_descrizione: "SDA - Segreteria direzione",
+                value: "SDA",
+                valueOriginale: "SDA"
+            },
+            {
+                dictionaryDatiAggiuntivi: {
+                },
+                ordinePerAnnullati: "",
+                stringa_Servizio: "",
+                text: "Support Supervisor",
+                valore_descrizione: "SVS - Support Supervisor",
+                value: "SVS",
+                valueOriginale: "SVS"
+            },
+            {
+                dictionaryDatiAggiuntivi: {
+                },
+                ordinePerAnnullati: "",
+                stringa_Servizio: "",
+                text: "Supporto/CustomerCare",
+                valore_descrizione: "SUP - Supporto/CustomerCare",
+                value: "SUP",
+                valueOriginale: "SUP"
+            },
+            {
+                dictionaryDatiAggiuntivi: {
+                },
+                ordinePerAnnullati: "",
+                selectedItems: [
+                    6
+                ],
+                stringa_Servizio: "",
+                text: "Sviluppatore/Tecnico",
+                valore_descrizione: "SVL - Sviluppatore/Tecnico",
+                value: "SVL",
+                valueOriginale: "SVL"
+            },
+            {
+                dictionaryDatiAggiuntivi: {
+                },
+                ordinePerAnnullati: "",
+                stringa_Servizio: "",
+                text: "Utente Richiesta Intervento",
+                valore_descrizione: "IRI - Utente Richiesta Intervento",
+                value: "IRI",
+                valueOriginale: "IRI"
+            }
+        ]
+			$('#dropdown1').ejDropDownList({
+			
+				dataSource: dataSource1,
+				fields: {
+            category: null,
+            groupBy: null,
+            htmlAttributes: null,
+            id: null,
+            imageAttributes: null,
+            imageUrl: null,
+            selected: null,
+            spriteCssClass: null,
+            tableName: null,
+            text: null,
+            value: null
+        },
+        enableFilterSearch: true,
+        enableIncrementalSearch: true,
+        filterType: "contains",
+        sortOrder: "ascending",
+        showCheckbox: true,
+        popupHeight: "152px",
+        showPopupOnLoad: false,
+			
+			});
+			$('#dropdown2').ejDropDownList({
+			
+				dataSource: dataSource1,
+				fields: {
+            category: null,
+            groupBy: null,
+            htmlAttributes: null,
+            id: null,
+            imageAttributes: null,
+            imageUrl: null,
+            selected: null,
+            spriteCssClass: null,
+            tableName: null,
+            text: null,
+            value: null
+        },
+        enableFilterSearch: true,
+        enableIncrementalSearch: true,
+        filterType: "contains",
+        sortOrder: "ascending",
+        showCheckbox: true,
+popupHeight: "152px",
+showPopupOnLoad: false,
+			
+			});
+      $('#dropdown3').ejDropDownList({
+			
+      dataSource: dataSource1,
+      fields: {
+          category: null,
+          groupBy: null,
+          htmlAttributes: null,
+          id: null,
+          imageAttributes: null,
+          imageUrl: null,
+          selected: null,
+          spriteCssClass: null,
+          tableName: null,
+          text: null,
+          value: null
+      },
+      enableFilterSearch: true,
+      enableIncrementalSearch: true,
+      filterType: "contains",
+      sortOrder: "ascending",
+      showCheckbox: true,
+popupHeight: "152px",
+showPopupOnLoad: false,
+    
+    });
+    $('#dropdown4').ejDropDownList({
+			
+      dataSource: dataSource1,
+      fields: {
+          category: null,
+          groupBy: null,
+          htmlAttributes: null,
+          id: null,
+          imageAttributes: null,
+          imageUrl: null,
+          selected: null,
+          spriteCssClass: null,
+          tableName: null,
+          text: null,
+          value: null
+      },
+      enableFilterSearch: true,
+      enableIncrementalSearch: true,
+      filterType: "contains",
+      sortOrder: "ascending",
+      showCheckbox: true,
+popupHeight: "152px",
+showPopupOnLoad: false,
+    
+    });
+    $('#dropdown5').ejDropDownList({
+			
+      dataSource: dataSource1,
+      fields: {
+          category: null,
+          groupBy: null,
+          htmlAttributes: null,
+          id: null,
+          imageAttributes: null,
+          imageUrl: null,
+          selected: null,
+          spriteCssClass: null,
+          tableName: null,
+          text: null,
+          value: null
+      },
+      enableFilterSearch: true,
+      enableIncrementalSearch: true,
+      filterType: "contains",
+      sortOrder: "ascending",
+      showCheckbox: true,
+popupHeight: "152px",
+showPopupOnLoad: false,
+    
+    });
+    $('#dropdown6').ejDropDownList({
+			
+      dataSource: dataSource1,
+      fields: {
+          category: null,
+          groupBy: null,
+          htmlAttributes: null,
+          id: null,
+          imageAttributes: null,
+          imageUrl: null,
+          selected: null,
+          spriteCssClass: null,
+          tableName: null,
+          text: null,
+          value: null
+      },
+      enableFilterSearch: true,
+      enableIncrementalSearch: true,
+      filterType: "contains",
+      sortOrder: "ascending",
+      showCheckbox: true,
+popupHeight: "152px",
+showPopupOnLoad: false,
+    
+    });
+    $('#dropdown7').ejDropDownList({
+			
+      dataSource: dataSource1,
+      fields: {
+          category: null,
+          groupBy: null,
+          htmlAttributes: null,
+          id: null,
+          imageAttributes: null,
+          imageUrl: null,
+          selected: null,
+          spriteCssClass: null,
+          tableName: null,
+          text: null,
+          value: null
+      },
+      enableFilterSearch: true,
+      enableIncrementalSearch: true,
+      filterType: "contains",
+      sortOrder: "ascending",
+      showCheckbox: true,
+popupHeight: "152px",
+showPopupOnLoad: false,
+    
+    });
+    $('#dropdown15').ejDropDownList({
+			
+      dataSource: dataSource1,
+      fields: {
+          category: null,
+          groupBy: null,
+          htmlAttributes: null,
+          id: null,
+          imageAttributes: null,
+          imageUrl: null,
+          selected: null,
+          spriteCssClass: null,
+          tableName: null,
+          text: null,
+          value: null
+      },
+      enableFilterSearch: true,
+      enableIncrementalSearch: true,
+      filterType: "contains",
+      sortOrder: "ascending",
+      showCheckbox: true,
+popupHeight: "152px",
+showPopupOnLoad: false,
+    
+    });
+    $('#dropdown16').ejDropDownList({
+			
+      dataSource: dataSource1,
+      fields: {
+          category: null,
+          groupBy: null,
+          htmlAttributes: null,
+          id: null,
+          imageAttributes: null,
+          imageUrl: null,
+          selected: null,
+          spriteCssClass: null,
+          tableName: null,
+          text: null,
+          value: null
+      },
+      enableFilterSearch: true,
+      enableIncrementalSearch: true,
+      filterType: "contains",
+      sortOrder: "ascending",
+      showCheckbox: true,
+popupHeight: "152px",
+showPopupOnLoad: false,
+    
+    });
+    $('#dropdown17').ejDropDownList({
+			
+      dataSource: dataSource1,
+      fields: {
+          category: null,
+          groupBy: null,
+          htmlAttributes: null,
+          id: null,
+          imageAttributes: null,
+          imageUrl: null,
+          selected: null,
+          spriteCssClass: null,
+          tableName: null,
+          text: null,
+          value: null
+      },
+      enableFilterSearch: true,
+      enableIncrementalSearch: true,
+      filterType: "contains",
+      sortOrder: "ascending",
+      showCheckbox: true,
+popupHeight: "152px",
+showPopupOnLoad: false,
+    
+    });
+    $('#dropdown25').ejDropDownList({
+			
+      dataSource: dataSource1,
+      fields: {
+          category: null,
+          groupBy: null,
+          htmlAttributes: null,
+          id: null,
+          imageAttributes: null,
+          imageUrl: null,
+          selected: null,
+          spriteCssClass: null,
+          tableName: null,
+          text: null,
+          value: null
+      },
+      enableFilterSearch: true,
+      enableIncrementalSearch: true,
+      filterType: "contains",
+      sortOrder: "ascending",
+      showCheckbox: true,
+popupHeight: "152px",
+showPopupOnLoad: false,
+    
+    });
+    $('#dropdown26').ejDropDownList({
+			
+      dataSource: dataSource1,
+      fields: {
+          category: null,
+          groupBy: null,
+          htmlAttributes: null,
+          id: null,
+          imageAttributes: null,
+          imageUrl: null,
+          selected: null,
+          spriteCssClass: null,
+          tableName: null,
+          text: null,
+          value: null
+      },
+      enableFilterSearch: true,
+      enableIncrementalSearch: true,
+      filterType: "contains",
+      sortOrder: "ascending",
+      showCheckbox: true,
+popupHeight: "152px",
+showPopupOnLoad: false,
+    
+    });
+    $('#dropdown27').ejDropDownList({
+			
+      dataSource: dataSource1,
+      fields: {
+          category: null,
+          groupBy: null,
+          htmlAttributes: null,
+          id: null,
+          imageAttributes: null,
+          imageUrl: null,
+          selected: null,
+          spriteCssClass: null,
+          tableName: null,
+          text: null,
+          value: null
+      },
+      enableFilterSearch: true,
+      enableIncrementalSearch: true,
+      filterType: "contains",
+      sortOrder: "ascending",
+      showCheckbox: true,
+popupHeight: "152px",
+showPopupOnLoad: false,
+    
+    });
+    $('#dropdown35').ejDropDownList({
+			
+      dataSource: dataSource1,
+      fields: {
+          category: null,
+          groupBy: null,
+          htmlAttributes: null,
+          id: null,
+          imageAttributes: null,
+          imageUrl: null,
+          selected: null,
+          spriteCssClass: null,
+          tableName: null,
+          text: null,
+          value: null
+      },
+      enableFilterSearch: true,
+      enableIncrementalSearch: true,
+      filterType: "contains",
+      sortOrder: "ascending",
+      showCheckbox: true,
+popupHeight: "152px",
+showPopupOnLoad: false,
+    
+    });
+    $('#dropdown36').ejDropDownList({
+			
+      dataSource: dataSource1,
+      fields: {
+          category: null,
+          groupBy: null,
+          htmlAttributes: null,
+          id: null,
+          imageAttributes: null,
+          imageUrl: null,
+          selected: null,
+          spriteCssClass: null,
+          tableName: null,
+          text: null,
+          value: null
+      },
+      enableFilterSearch: true,
+      enableIncrementalSearch: true,
+      filterType: "contains",
+      sortOrder: "ascending",
+      showCheckbox: true,
+popupHeight: "152px",
+showPopupOnLoad: false,
+    
+    });
+    $('#dropdown37').ejDropDownList({
+			
+      dataSource: dataSource1,
+      fields: {
+          category: null,
+          groupBy: null,
+          htmlAttributes: null,
+          id: null,
+          imageAttributes: null,
+          imageUrl: null,
+          selected: null,
+          spriteCssClass: null,
+          tableName: null,
+          text: null,
+          value: null
+      },
+      enableFilterSearch: true,
+      enableIncrementalSearch: true,
+      filterType: "contains",
+      sortOrder: "ascending",
+      showCheckbox: true,
+      popupHeight: "152px",
+      showPopupOnLoad: false,
+    
+    });
+  </script>
+</body>
+
+</html>
